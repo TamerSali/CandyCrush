@@ -5,7 +5,46 @@
           box-sizing: border-box;
 }
 
-.container {
+body {
+  background: url("https://pressstart.vip/images/uploads/assets/cityskyline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .score-board {
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+main .score-board #score {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+main section {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+main section .container {
   height: 560px;
   width: 560px;
   display: -webkit-box;
@@ -15,8 +54,15 @@
       flex-wrap: wrap;
 }
 
-.container div {
+main section .container div {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 /*# sourceMappingURL=style.css.map */

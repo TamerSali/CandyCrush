@@ -3,13 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  height: 560px;
-  width: 560px;
+body {
+  background: url("https://pressstart.vip/images/uploads/assets/cityskyline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  div {
-    width: 70px;
-    height: 70px;
+  align-items: center;
+  justify-content: space-around;
+
+  .score-board {
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    #score {
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+  section {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .container {
+      height: 560px;
+      width: 560px;
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: grid;
   }
 }

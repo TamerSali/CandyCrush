@@ -216,11 +216,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     window.setInterval(function () {
-        moveDown();
         checkRowForFour();
         checkColumnForFour();
         checkRowForThree();
         checkColumnForThree();
+        moveDown();
 
     }, 100)
 

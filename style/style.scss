@@ -46,5 +46,9 @@ main {
 @media screen and (max-width: 768px) {
   main {
     display: grid;
+
+    section {
+      padding: 0;
+    }
   }
 }

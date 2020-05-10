@@ -64,5 +64,8 @@ main section .container div {
     display: -ms-grid;
     display: grid;
   }
+  main section {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
